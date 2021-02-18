@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
 	<head>
-		<meta charset='UTF-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<title>NASA APOD</title>
-		<link rel='icon' type='image/png' href='https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov'>
-		<link rel='stylesheet' href='style.css'>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<title>Astronomy-Explorer</title>
+		<link rel='icon' type='image/x-icon' href='favicon.ico' />
+		<link rel='stylesheet' type='text/css' href='style.css' />
 	</head>
 	<body>
 		<div class='loader hidden'>
-			<img src='./rocket.svg' alt='Rocket Loader'>
+			<img src='rocket.svg' alt='loader' />
 		</div>
 		<div class='container'>
 			<div class='navigation-container'>
 				<span class='background'></span>
-				<span id='results-nav' class='navigation-items'>
-					<h3 class='clickable' onclick="updateDOM('favourites');">Favourites</h3>
+				<span id='results-navigation' class='navigation-items'>
+					<h3 class='clickable' onclick='upDateDOM("favourites")'>Favourites</h3>
 					<h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
-					<h3 class='clickable' onclick='getImages()'>Load More</h3>
+					<h3 class='clickable' onclick='getImages()'>ReFresh</h3>
 				</span>
-				<span id='favourites-nav' class='navigation-items hidden'>
-					<h3 class='clickable' onclick="updateDOM('results');">Load More NASA Images</h3>
+				<span id='favourites-navigation' class='navigation-items hidden'>
+					<h3 class='clickable' onclick='upDateDOM("results")'>Back to Images</h3>
 				</span>
 			</div>
 			<div class='images-container'></div>
 		</div>
 		<div class='save-confirmed' hidden>
-			<h1>ADDED!</h1>
+			<h1>FAVOURITED</h1>
 		</div>
 		<script src='script.js'></script>
 	</body>

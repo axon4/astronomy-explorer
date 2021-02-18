@@ -1,7 +1,7 @@
-# NASA Astronomy Picture of the Day
+# Astronomy-Explorer
 
-* Explore breathtaking photos of space from NASA. 
-* Save photos to your favourites for later (Local Storage).
+* explore glorious, breath-taking photos of the heavens from National AeroNautics and Space Administration (NASA)
+* save photos to favourites for later appreciation (local-storage)
 
 ## Stack
 
